@@ -1,0 +1,416 @@
+.first-row{
+    font-size: xx-small;
+    background-color: #02448b;
+}
+.navi-bar{
+    font-size:xx-large;
+    font-weight:500;
+    color: #105692;
+}
+body {
+    overflow-x: hidden;
+}
+.side-bar{
+    font-size:16px ;
+    padding: 5px;
+    padding-left: 26px;
+}
+.search-bar{
+    width: 396px;
+}
+.home{
+    color: black;
+    font-size: large;
+    font-weight: 600;
+}
+.offcanvas{
+    max-width: 260px;
+}
+.third-row{
+    background-color:  #002b58;
+    font-size: x-large;
+    font-weight: 50;
+}
+.backside{
+    background-image: linear-gradient(to bottom, rgba(62, 60, 60, 0.5),rgb(0, 0, 0,0.4)),url(/assert/running.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+}
+.second-row-card{
+    background-color:#002b58 ;
+}
+.second-row-text{
+    font-size: small;
+}
+.search{
+    border-radius: 20px;
+    background-color:#002b58;
+    font-size: small;
+    border: 2px solid #6db847;
+}
+.third-row-text{
+    font-size: xx-large;
+    font-weight: 700;
+    background: linear-gradient(to right, #4fae7a  15%, #3183c2 100%);
+	-webkit-background-clip:text ;
+	-webkit-text-fill-color: transparent; 
+}
+.Sign-in{
+    border-radius: 100px;
+    background-color: #d37204;
+}
+.evaluation-now{
+    font-size: x-large;
+    font-weight: 600;
+}
+.login{
+    color: #105692;
+}
+.mop-footer{
+    background: #302633;
+    border: 2px solid #302633;
+}
+.delay{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.risks{
+    font-size: x-large;
+    font-weight:450;
+}
+.Minor{
+    font-size: medium;
+    font-weight: 450;
+}
+.individual{
+    font-style: italic;
+}
+.ortho-service{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.ortho-text{
+    font-size: medium;
+}
+.knee-doc{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+}
+.ortho-condition{
+    background-color: #f3f4f6;
+}
+.focus-area{
+    font-size: xx-large;
+    font-weight: 550;
+}
+.spinol-img{
+    border-radius: 25px;
+    height: 250px;
+}
+.spinol-card{
+    border-radius: 20px;
+}
+.spine{
+    font-size: x-large;
+    font-weight: 490;
+}
+.learn-more{
+    text-decoration: none;
+    color: #1c5e97;
+}
+.cloud{
+    background-image:url("/assert/socialmedia.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+.cloud-text{
+    color: #3183c2;
+    font-weight: 400;
+}
+.media-name{
+    font-weight: 500;
+}
+.social-media{
+    font-size: x-large;
+    font-weight: 700;
+}
+.register{
+    background-color:#46b0ba;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 30px;
+}
+.reg-button{
+    font-size: x-large;
+    font-weight: 700;
+    background-color: #a40202; 
+    border-radius:50px 50px 50px 0px; 
+}
+.ortho-community{
+    background-color: #002b58;
+    height: 350px;
+}
+.ortho-partner{
+    font-size: xX-large;
+    font-weight: 500;
+}
+.ortho{
+    height: 300px;
+    width: 410px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.ortho-white{
+    height: 250px;
+}
+.doctor-name{
+    font-size: x-large;
+    font-weight: 500;
+    color: #105692;
+}
+.card_3{
+    border-radius: 5px;
+}
+.why-now{
+    background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.5),rgba(21, 21, 21, 0.4)),url(/assert/images\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    /* opacity: 0.9;    */
+}
+.first-name{
+    background-image: linear-gradient(to bottom, rgba(15, 127, 152, 0.945),rgba(137, 220, 239, 0.945)),url(/assert/images\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.button{
+    background-color: #0f3968;
+    font-size: large;
+    border-radius: 5px;
+}
+.text-input{
+    border-radius: 5px;
+}
+.why-text{
+    color: white;
+    font-size: xx-large;
+    font-weight: 500;
+    
+}
+.why-answer{
+    color: white;
+}
+.footer-logo{
+    width: 300px;
+}
+.input-firstname{
+    width: 295px;
+}
+.content{
+    position: absolute;
+    background: linear-gradient(rgb(19,65,110,0.2)10%,rgb(8,46,88,0.7)40%,rgb(5, 45, 87));
+    width: 420px;
+    height: 460px;
+    padding-top: 120px;
+    border-radius: 5px;
+}
+.ev-image{
+    height: 460px;
+    width: 420px;
+    border-radius: 5px;
+}
+.social-twitter{
+    border: 1px solid #1da1f2;
+}
+.social-facebook{
+    border: 1px solid #4267b2;
+}
+.social-insta{
+    border: 1px solid #eb7193;
+}
+.social-youtube{
+    border: 1px solid #ff0404;
+}
+.footer-line{
+    width: 1300px;
+}
+@media (max-width:640px){
+    .search-bar{
+        width: 260px;
+    }
+    .knee-doc{
+        width: 300px;
+    }
+    .education{
+        display: none;
+    }
+    .Minor{
+        font-size: small;
+    }
+    .risks{
+        font-size: large;
+    }
+    .delay{
+        font-size: x-large;
+    }
+    .register{
+        font-size: large;
+        font-weight: 0;
+        line-height: 30px;
+    }
+    .reg-button{
+        font-size: large;
+        background-color: #a40202; 
+        border-radius:50px 50px 50px 0px; 
+    }
+    .why-answer{
+        font-size: smaller;
+    }
+    .why-text{
+        font-size: large;
+    }
+    .header{
+        display: none;
+    }
+    .sidebar-logo{
+        height :100px;
+        width: 180px;
+    }
+    .off-logo{
+        width: 200px;
+        height: 100px;
+    }
+    .ortho-service{
+        font-size:large;
+    }
+    .focus-area{
+        font-size: medium;
+        text-align: center;
+    }
+    .focus-card{
+        display: none;
+    }
+    .spine{
+        font-size: medium;
+        font-weight: 450;
+    }
+    .spinol-img{
+        width: 270px;
+        height: 200px;
+    }
+    .footer-line{
+        display: none;
+    }
+    .content-t{
+        position: absolute;
+        background: linear-gradient(rgb(19,65,110,0.2)10%,rgb(8,46,88,0.7)40%,rgb(5, 45, 87));
+        width: 295px !important;
+        height: 480px;
+        padding-top: 150px;
+        border-radius: 10px;
+    }
+    .img-education{
+        width: 295px !important;
+        height: 480px;
+        border-radius: 10px;
+    }
+    .input-firstname{
+        width: 270px !important;
+    }
+    .cloud{
+        display: none;
+    }
+    .sm-social{
+        font-size: medium;
+    }
+    .ortho-partner{
+        font-size: large;
+        font-weight: 500;
+    }
+    .ortho{
+        width: 270px;
+    }
+    .social-media{
+        font-weight: 500;
+    }
+    .ortho-sm{
+        display: none !important;
+    }
+    .support{
+        font-size:smaller;
+    }
+}
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1023px){
+    .header {
+        display: none;
+    } 
+    .off-logo{
+        width: 180px;
+        height: 100px;
+    }
+   .education{
+    display: none;
+   }
+   .content-t{
+    position: absolute;
+    background: linear-gradient(rgb(19,65,110,0.2)10%,rgb(8,46,88,0.7)40%,rgb(5, 45, 87));
+    width: 500px;
+    height: 500px;
+    padding-top: 180px;
+    border-radius: 10px;
+    }
+    .img-education{
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .card-community{
+        width: 300px;
+    }
+    .ortho{
+        width: 300px !important;
+    }
+    .ortho-sm{
+        display: none !important;
+    }
+    .next-arr{
+        padding-right: 250px;
+    }
+    .input-firstname{
+        width: 310px !important;
+    }
+}
+@media screen and (max-device-width: 1024px){
+    .large-nav{
+        padding-top: 25px;
+    }
+    .logo-img{
+        width:230px;
+    }
+    .cloud{
+        padding: 6rem !important;
+    }
+    .input-firstname{
+        width: 180px;
+    }
+    .content{
+        position: absolute;
+        background: linear-gradient(rgb(19,65,110,0.2)10%,rgb(8,46,88,0.7)40%,rgb(5, 45, 87));
+        width: 280px;
+        height: 460px;
+        padding-top: 120px;
+    }
+    .ev-image{
+        height: 460px;
+        width: 280px;
+    }
+    .ortho{
+        width: 270px;
+    }
+}

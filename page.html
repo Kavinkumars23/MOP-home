@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="mop.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row first-row">.</div>
+        <!-- header -->
+        <div class="row bg-light header">
+            <div class="col-xl-4 col-lg-2 px-xl-5">
+                <img class="mt-2 logo-img" src="/assert/download.png" >
+            </div>
+            <div class="col-xl-8 col-lg-10 d-xl-flex justify-content-end pe-5 large-nav px-xl-5 px-lg-5">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link home ms-xl-0 ms-4" href="#">Home</span></a>
+                            </li>
+                            <li class="nav-item dropdown ms-xl-3 ">
+                                <a class="nav-link dropdown-toggle home" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item ms-xl-3">
+                                <a class="nav-link home" href="#">Evaluation</a>
+                            </li>
+                            <li class="nav-item ms-xl-3">
+                                <a class="nav-link home" href="#">Education</a>
+                            </li>
+                            <li class="nav-item dropdown ms-xl-3">
+                                <a class="nav-link dropdown-toggle home" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Providers
+                                </a>
+                            </li>
+                            <li class="nav-item ms-xl-3">
+                                <a class="nav-link home" href="#">Exercises</a>
+                            </li>
+                            <li class="nav-item dropdown ms-xl-3">
+                                <a class="nav-link dropdown-toggle home" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    More
+                                </a>
+                            </li>
+                            <a class="navbar-brand ms-xl-3 fw-bold login" href="#"> Login</a>
+                            <button type="button"
+                                class="btn btn-warning ms-xl-3 me-xl-5 Sign-in fw-bold text-white">Signup</button>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- sidebar for medium and small screen-->
+        <div class="row d-xl-none d-lg-none bg-light"> 
+            <div class="col-6">
+                <img src="/assert/download.png" class="mt-2 mb-3 sidebar-logo">
+            </div>
+            <div class="col-6 text-end">
+                <a class="btn btn-primary bg-light border-0 py-3 px-3" data-bs-toggle="offcanvas"
+                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-end py-lg-o py-md-5 py-4 me-3"><iconify-icon
+                                icon="ri:menu-fill" style="color: black;" width="50" height="30"></iconify-icon></span>
+                    </button>
+                </a>
+                <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <img src="/assert/download.png" class="mt-2 mb-3 off-logo">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-start">
+                        <div class="row">
+                            <ul class="nav  nav-pills flex-column p-0 ">
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link home" href="#">Home</span></a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link dropdown-toggle home" href="#" id="navbarDropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link home" href="#">Evaluation</a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link home" href="#">Education</a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link dropdown-toggle home" href="#" id="navbarDropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Providers
+                                    </a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link home" href="#">Exercises</a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="nav-link dropdown-toggle home" href="#" id="navbarDropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </a>
+                                </li>
+                                <li class="nav-item side-bar align-items-center">
+                                    <a class="navbar-brand ms-3 bold login home" href="#"> Login</a>
+                                </li>
+                                <li class="nav-item side-bar mt-2 align-items-center">
+                                    <button type="button"
+                                        class="btn btn-warning Sign-in fw-bold text-white home">Signup</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- third row -->
+        <div class="row third-row text-white">
+            <p class="text-center mt-5">Simplifying <span class="third-row-text">YOUR</span> Orthopedic Care <span
+                    class="third-row-text">EVALUATION, EDUCATE & ENGAGE</span></p>
+        </div>
+        <!-- running -->
+        <div class="row backside px-2 py-5">
+            <div class="col-xl-5 col-md-7 col-sm-12 text-lg-start text-md-start text-center p-lg-5 ">
+                <div class="fs-4 fw-bold ms-2 text-white">EVALUATE NOW</div>
+                <div class="ms-2 text-white">ClICK ICON BELOW TO BEGIN YOUR EVALUATION</div>
+                <div class="d-flex p-2 mt-3">
+                    <div class="card d-flex d-inline-flex second-row-card">
+                        <img src="/assert/Hip.png" alt="" class="px-lg-3 mt-2 pe-lg-3 pe-lg-0 pe-md-3 pe-4 ps-3 "
+                            width="90" height="60">
+                        <span class="text-center pb-2 text-white pt-1 second-row-text">Hip</span>
+                    </div>
+                    <div class="ms-2 card d-flex d-inline-flex second-row-card">
+                        <img src="/assert/leg.png" alt="" class="px-lg-3 mt-2 pe-lg-3 pe-lg-0 pe-md-3 pe-4 ps-3"
+                            width="90" height="60">
+                        <span class="text-center pb-2 text-white pt-1 second-row-text">Knee</span>
+                    </div>
+                    <div class="ms-2 card d-flex d-inline-flex second-row-card">
+                        <img src="/assert/shoulder.png" alt="" class="px-lg-3 mt-2 pe-lg-3 pe-lg-0 pe-md-3 pe-4 ps-3"
+                            width="90" height="60">
+                        <span class="text-center pb-2 text-white pt-1 second-row-text">Shoulder</span>
+                    </div>
+                </div>
+                <div class="d-flex p-2">
+                    <div class="card d-flex d-inline-flex second-row-card">
+                        <img src="/assert/Hand.png" alt="" class="px-lg-3 mt-2 pe-lg-3 pe-lg-0 pe-md-3 pe-4 ps-3"
+                            width="90" height="60">
+                        <span class="text-center pb-2 text-white pt-1 second-row-text">Hand & Wrist</span>
+                    </div>
+                    <div class="ms-2 card d-flex d-inline-flex second-row-card">
+                        <img src="/assert/Foot_1.jpg" alt="" class="px-lg-3 mt-2 pe-lg-3 pe-lg-0 pe-md-3 pe-4 ps-3"
+                            width="90" height="60">
+                        <span class="text-center pb-2 text-white pt-1 second-row-text">Foot & Ankle</span>
+                    </div>
+                    <div class="ms-2 card d-flex d-inline-flex second-row-card">
+                        <img src="/assert/spline.png" alt="" class="px-lg-3 mt-2 pe-lg-3 pe-lg-0 pe-md-3 pe-4 ps-3"
+                            width="90" height="60">
+                        <span class="text-center pb-2 text-white pt-1 second-row-text">Spine</span>
+                    </div>
+                </div>
+                <div class="mt-4 ms-2 text-white search d-flex py-2 px-3 justify-content-between search-bar">
+                    <div>
+                        <span class="pe-lg-5 d-lg-block d-md-block d-none">Search your orthopedic condition to learn more</span>
+                        <span class="pe-lg-5 d-md-none">Search your orthopedic condition...</span>
+                    </div>
+                    <div>
+                        <iconify-icon icon="majesticons:search-line" style="color: white;" width="17"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ortho service -->
+        <div class="row ms-lg-4  ms-sm-0">
+            <div class="col-xl-8 col-lg-7 p-5 ">
+                <div class="row ortho-service">
+                    ORTHOPEDIC SERVICE AND TOOLS WE PROVIDE
+                </div>
+                <div class="row mt-3 ortho-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. tenetur accusamus et alias? Accusantium
+                    voluptatum tenetur accusamus et alias? Accusantium voluptatum harum veniam!
+                </div>
+                <div class="row mt-3 ortho-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, ullam autem sit amet consectetur
+                    adipisicing elit. Cumque, ullam autem sit voluptate veritatis ratione enim adipisci porro vitae vero
+                    saepe deleniti eaque cum consequuntur optio voluptatum natus, nemo officia.
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12  py-lg-5 text-lg-start text-center">
+                <img class="knee-doc" src="/assert/download.jpg">
+            </div>
+        </div>
+        <!-- Evaluation Education Providers-->
+        <div class="row mt-lg-2 mt-md-2 mb-5 education ms-5">
+            <div class="col-4">
+                <div class="card border-0 me-5">
+                    <img src="/assert/doctor_2.webp" class="ev-image" >
+                    <div class="content d-flex  align-items-center">
+                        <div class="d-flex flex-column">
+                            <div class="mt-5 pt-5 px-4 text-white">
+                                <span class="fs-4 fw-semibold">Evaluation</span>
+                                <p class="pb-2 pt-2 ">Begin your journey to understanding and recovery today. Begin with
+                                    our
+                                    simple evaluator questions and then educate yourself and engage with providers.
+                                </p>
+                                <iconify-icon icon="gg:arrow-up-o" style="color: white;" rotate="90deg"
+                                    width="40"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-0 me-5">
+                    <img src="/assert/doctor_2.webp" class="ev-image">
+                    <div class="content d-lg-flex  align-items-center">
+                        <div class="d-flex flex-column">
+                            <div class="mt-5 pt-5 px-4 text-white">
+                                <span class="fs-4 fw-semibold">Education</span>
+                                <p class="pb-2 pt-2 ">Begin your journey to understanding and recovery today. Begin with
+                                    our
+                                    simple evaluator questions and then educate yourself and engage with providers.
+                                </p>
+                                <iconify-icon icon="gg:arrow-up-o" style="color: white;" rotate="90deg"
+                                    width="40"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 pe-5">
+                <div class="card border-0 me-5">
+                    <img src="/assert/doctor_4.jpg" class="ev-image">
+                    <div class="content d-lg-flex  align-items-center ">
+                        <div class="d-flex flex-column">
+                            <div class=" mt-5 pt-5 px-4 text-white">
+                                <span class="fs-4 fw-semibold">Providers</span>
+                                <p class="pb-2 pt-2 ">Begin your journey to understanding and recovery today. Begin with
+                                    our
+                                    simple evaluator questions and then educate yourself and engage with providers.
+                                </p>
+                                <iconify-icon icon="gg:arrow-up-o" style="color: white;" rotate="90deg"
+                                    width="40"></iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- evaluation education providers small screen and Medium Screen-->
+        <div class="row mb-5 d-lg-none ms-lg-0 ms-md-1 px-lg-0 px-md-5">
+            <div id="carouselExampleControls" class="carousel slide mt-5 ms-lg-0 ms-md-5 px-lg-0 px-md-4"
+                data-bs-ride="true">
+                <div class="carousel-indicators justify-content-center ms-lg-0 ms-md-5 pe-lg-0 pe-md-5">
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border-0">
+                            <img src="/assert/doctor_2.webp" class="img-education">
+                            <div class="content-t">
+                                <div class="d-flex flex-column">
+                                    <div class="mt-5 pt-lg-0 pt-md-5 pt-4 px-2 text-white">
+                                        <span class="fs-5 fw-semibold">Evaluation</span>
+                                        <p class="py-2">Begin your journey to understanding and recovery today. Begin
+                                            with
+                                            our
+                                            simple evaluator questions and then educate yourself and engage with
+                                            providers.
+                                        </p>
+                                        <iconify-icon icon="gg:arrow-up-o" style="color: white;" rotate="90deg"
+                                            width="40"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0">
+                            <img src="/assert/doctor_2.webp" class="img-education">
+                            <div class="content-t">
+                                <div class="d-flex flex-column">
+                                    <div class=" mt-5 pt-lg-0 pt-md-5 pt-4 px-2 text-white">
+                                        <span class="fs-4 fw-semibold">Education</span>
+                                        <p class="py-2">Begin your journey to understanding and recovery today. Begin
+                                            with
+                                            our
+                                            simple evaluator questions and then educate yourself and engage with
+                                            providers.
+                                        </p>
+                                        <iconify-icon icon="gg:arrow-up-o" style="color: white;" rotate="90deg"
+                                            width="40"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0">
+                            <img src="/assert/doctor_4.jpg" class="img-education">
+                            <div class="content-t ">
+                                <div class="d-flex flex-column">
+                                    <div class=" mt-5 pt-lg-0 pt-md-5 pt-4 px-2 text-white">
+                                        <span class="fs-4 fw-semibold">Providers</span>
+                                        <p class="py-2">Begin your journey to understanding and recovery today. Begin
+                                            with
+                                            our
+                                            simple evaluator questions and then educate yourself and engage with
+                                            providers.
+                                        </p>
+                                        <iconify-icon icon="gg:arrow-up-o" style="color: white;" rotate="90deg"
+                                            width="40"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- register -->
+        <div class="row register text-white ps-lg-2 p-lg-5">
+            <div class="col-lg-8 px-lg-5 ms-lg-4 text-lg-start text-md-center">
+                Register here to join My Orthopedic Problem community of Patients, Orthopedic Surgeons, Nurse
+                Practitioners, Therapist, Primary Care, Wellness Providers, Personal trainer, Gym, Rehabilitation
+                Center, Athletic Trainer, Hospital etc.
+            </div>
+            <div class="col-lg-3 mt-lg-0 mt-3 mb-lg-0 mb-2 text-center">
+                <button type="button" class="btn text-white btn-block px-5 py-4 reg-button ">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <div class="p-0">Register</div>
+                        <div class=" p-0">
+                            &nbsp;<iconify-icon icon="ooui:next-ltr" style="color: white;" width="20" height="20"></iconify-icon>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- ORTHOPEDIC CONDITION FOCUS AREAS-->
+        <div class="row p-lg-5 ortho-condition">
+            <div class="row ms-lg-3 ms-md-4 ms-2 mt-5 focus-area">
+                ORTHOPEDIC CONDITION FOCUS AREAS
+            </div>
+            <div class="row mt-4 ms-1 focus-card">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="ms-lg-0 ms-2 card spinol-card ">
+                        <img src="/assert/spinol.jpg" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Spine</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-6">
+                    <div class=" ms-2 card spinol-card ">
+                        <img src="/assert/Hip_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Hip</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mt-xl-0 mt-4">
+                    <div class="card ms-lg-0 ms-2 spinol-card ">
+                        <img src="/assert/Hand & Wrist_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Hand & Wrist</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 d-xl-none">
+                    <div class="card ms-2 spinol-card mt-xl-0 mt-4">
+                        <img src="/assert/Foot & Ankle.png" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Foot & Ankle</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 ms-1 focus-card mb-4">
+                <div class="col-xl-4 col-lg-0 col-md-6 d-xl-block d-none">
+                    <div class="card spinol-card ">
+                        <img src="/assert/Foot & Ankle.png" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Foot & Ankle</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class=" ms-xl-2 ms-lg-0 ms-md-2 card spinol-card ">
+                        <img src="/assert/Soulder_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Shoulder</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="card ms-2 spinol-card ">
+                        <img src="/assert/Knee_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                        <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                            <div class="p-1 ms-2 spine">Knee</div>
+                            <div class="p-2">
+                                <div class="d-flex flex-row">
+                                    <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                    <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                            width="30" height="30"></iconify-icon></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card carousel small screen -->
+            <div class="row d-md-none ms-1 mt-4 mb-4">
+                <div id="carouselExampleControl" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card spinol-card ">
+                                <img src="/assert/spinol.jpg" class="card-img-top p-2 spinol-img" alt="...">
+                                <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                                    <div class="p-2 ms-2 spine">Spine</div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                            <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                                    width="30" height="30"></iconify-icon></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card spinol-card">
+                                <img src="/assert/Hip_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                                <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                                    <div class="p-2 ms-2 spine">Hip</div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                            <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                                    width="30" height="30"></iconify-icon></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card spinol-card">
+                                <img src="/assert/Hand & Wrist_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                                <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                                    <div class="p-2 ms-2 spine">Hand & Wrist</div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                            <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                                    width="30" height="30"></iconify-icon></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card spinol-card">
+                                <img src="/assert/Foot & Ankle.png" class="card-img-top p-2 spinol-img" alt="...">
+                                <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                                    <div class="p-2 ms-2 spine">Foot & Ankle</div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                            <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                                    width="30" height="30"></iconify-icon></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card spinol-card">
+                                <img src="/assert/Soulder_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                                <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                                    <div class="p-2 ms-2 spine">Shoulder</div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                            <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                                    width="30" height="30"></iconify-icon></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card spinol-card">
+                                <img src="/assert/Knee_@.png" class="card-img-top p-2 spinol-img" alt="...">
+                                <div class="d-flex flex-row mb-3 mt-2 justify-content-between">
+                                    <div class="p-2 ms-2 spine">Knee</div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="p-1"><a href="#" class="learn-more">Learn more</a></div>
+                                            <div class="p-0"><iconify-icon icon="carbon:next-outline" style="color: #1c5e97;"
+                                                    width="30" height="30"></iconify-icon></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControl"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ORTHOPEDIC PARTNER COMMUNITY -->
+        <div class="row ortho-community">
+            <div class="text-center pt-5 ortho-partner text-white"> OUR ORTHOPEDIC PARTNER COMMUNITY</div>
+            <div id="carouselExampleControls" class="carousel slide mt-5 ms-lg-0 ms-md-5 px-lg-5 px-md-4"
+                data-bs-ride="true">
+                <div class="carousel-indicators justify-content-center ms-lg-0 ms-md-5 pe-lg-0 pe-md-5">
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center mt-5 ortho-sm">
+                            <div class="card card_3 pb-4">
+                                <img src="/assert/doctor_3.jpg" alt="" class="ortho">
+                                <div class="d-flex flex-column px-4 pt-3">
+                                    <span class="doctor-name">Dr. Wiley Wites</span>
+                                    <span>Orthopedic Surgeon</span>
+                                </div>
+                            </div>
+                            <div class="card card_3 ms-5">
+                                <img src="/assert/doctor_5.jpg" alt="" class="ortho">
+                                <div class="d-flex flex-column px-4 pt-3">
+                                    <span class="doctor-name">Dr. John Dory</span>
+                                    <span>General Practitioner</span>
+                                </div>
+                            </div>
+                            <div class="card card_3 ms-5 ">
+                                <img src="/assert/doctor_3.jpg" alt="" class="ortho">
+                                <div class="d-flex flex-column px-4 pt-3">
+                                    <span class="doctor-name">Dr. Patty O'Furniture</span>
+                                    <span>Rehabilitation Therapist</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <button class="carousel-control-prev opacity-100 d-xl-block d-lg-block d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                    <span class="me-5"><iconify-icon icon="fe:arrow-up" style="color: #4b80ad;" width="30" rotate="90deg" flip="horizontal,vertical" class="bg-light rounded-5 p-1"></iconify-icon></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next opacity-100 d-xl-block d-lg-block d-none " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="ms-5"><iconify-icon icon="fe:arrow-up" style="color: #4b80ad;" width="30" rotate="90deg" class="bg-light rounded-5 p-1"></iconify-icon></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                <!-- <button class="carousel-control-prev d-xl-block d-lg-block d-none mb-3" type="button" data-bs-target="#carouselExampleControll"
+                        data-bs-slide="prev">
+                        <span class="me-5" aria-hidden="true">
+                        <iconify-icon icon="carbon:previous-outline" style="color: #ededee;" width="32" height="32"></iconify-icon>
+                            
+                        </span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next d-xl-block d-lg-block d-none mb-3" type="button" data-bs-target="#carouselExampleControll"
+                        data-bs-slide="next">
+                        <span class="next-arr ms-5" aria-hidden="true"><iconify-icon icon="carbon:next-outline" style="color:#f0f2f5" width="32" height="32"></iconify-icon></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+            </div>
+            <div class="row d-lg-none ms-lg-0 ms-md-1 px-lg-0 px-md-5">
+                <div id="carouselExampleControll" class="carousel slide ms-lg-0 ms-md-5 ms-2 px-lg-0 px-md-4" data-bs-ride="true">
+                    <div class="carousel-inner ms-lg-0 ms-md-5 px-lg-0 px-md-5">
+                        <div class="carousel-item active">
+                            <div class="card pb-4 card-community">
+                                <img src="/assert/doctor_3.jpg" alt="" class="ortho">
+                                <div class="d-flex flex-column px-4 pt-3">
+                                    <span class="doctor-name">Dr. Wiley Wites</span>
+                                    <span>Orthopedic Surgeon</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card pb-4 card-community">
+                                <img src="/assert/doctor_5.jpg" alt="" class="ortho">
+                                <div class="d-flex flex-column px-4 pt-3">
+                                    <span class="doctor-name">Dr. John Dory</span>
+                                    <span>General Practitioner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card pb-4 card-community">
+                                <img src="/assert/doctor_3.jpg" alt="" class="ortho">
+                                <div class="d-flex flex-column px-4 pt-3">
+                                    <span class="doctor-name">Dr. Patty O'Furniture</span>
+                                    <span>Rehabilitation Therapist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControll"
+                        data-bs-slide="prev">
+                        <span class="" aria-hidden="true"><iconify-icon icon="ooui:next-rtl" style="color: rgb(163, 154, 154);" width="30" height="20"></iconify-icon></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControll"
+                        data-bs-slide="next">
+                        <span class="next-arr" aria-hidden="true"><iconify-icon icon="ooui:next-ltr" style="color: rgb(163, 154, 154);" width="30" height="20 "></iconify-icon></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row ortho-white"></div>
+        </div>
+    <!--WHY NOW-->
+    <div class="row m-0 mt-lg-5">
+        <div class="col-lg-6 why-now px-lg-4 py-lg-5 px-md-4 py-md-5">
+            <div class=" ms-xl-3 ms-lg-0 ms-3 row why-text px-lg-5 px-md-5 py-xl-3 py-lg-0 py-3">
+                WHY NOW?
+            </div>
+            <div class=" ms-xl-3 ms-lg-0 ms-3 me-xl-3 me-lg-0 me-3 row why-answer px-lg-5 px-md-5 py-lg-3 py-md-3 pb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, repudiandae tenetur quidem
+                doloremque ipsum incidunt, reiciendis autem commodi quia repellat vitae corporis necessitatibus. Sit
+                molestiae illo fuga ipsa minus aut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima ab, vitae veniam quos,
+                possimus iure officia debitis dicta, illum maiores dolorum laboriosam enim. Tenetur iusto temporibus
+                aut nulla pariatur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate debitis corporis in
+                soluta, doloribus repudiandae placeat ipsum veniam qui tenetur. Nisi, aspernatur voluptatibus
+                obcaecati impedit fugit voluptates ut quod?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deserunt labore sunt iure
+                totam sed commodi porro harum nulla corporis? Distinctio recusandae tempora deserunt esse possimus
+                mollitia earum qui incidunt?
+            </div>
+        </div>
+        <div class="col-lg-6 first-name p-lg-5 p-md-5 ">
+            <div class="d-flex justify-content-between  flex-lg-row flex-md-row flex-column mx-xl-4 mx-md-4 mx-3 mt-3 mb-2">
+                <div >
+                    <input type="text" class="text-input border-0 input-firstname p-2 " placeholder="First name">
+                </div>
+                <div>
+                    <input type="text" class="text-input border-0 input-firstname p-2 mt-lg-0 mt-md-0 mt-3" placeholder="Last name">
+                </div>
+            </div>
+            <!-- <div class=" ms-lg-3 ms-md-3 ms-2  p-2 pe-lg-4 pe-md-4 ">
+                <input type="text" class="text-input col-lg-5 col-md-5 col-12 border-0 p-2 me-5" placeholder="First name">
+                <span>
+                    <input type="text" class="text-input p-2 col-lg-5 col-md-5 col-12 mt-lg-0 mt-md-0 mt-3 border-0 ms-"
+                        placeholder="Last name">
+                </span>
+            </div> -->
+            <div class="ms-lg-3 ms-md-3 ms-2  p-2 pe-lg-4 pe-md-4"><input type="text"
+                    class="text-input col-12 border-0 p-2" placeholder="Email"></div>
+            <div class="ms-lg-3 ms-md-3 ms-2  p-2 pe-lg-4 pe-md-4"><textarea name="" class="text-input col-12 "
+                    id="" cols="10" rows="7" placeholder=" Do you have a message for us?"></textarea></div>
+            <div class="ms-lg-3 ms-md-3 p-lg-2 p-md-2 p-2 text-lg-start text-md-start text-center"><button
+                    class="button p-2 text-white border-0">Submit</button></div>
+        </div>
+
+    </div>
+    <!-- DON'T DELAY YOUR TREATMENT -->
+    <div class="row m-0  ms-lg-4 ms-md-5 ms-2 mt-4 ">
+        <div class="col-lg-6  p-lg-5">
+            <div class="delay">
+                DON'T DELAY YOUR TREATMENT
+            </div>
+            <div class="row Minor mt-2">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="risks py-3"> Risks of Delayed Treatment</div>
+                    <li class="p-1 fw-5">Minor Problems become Major Problem</li>
+                    <li class="p-1">Recovery time increases</li>
+                    <li class="p-1">Quality of life Declines</li>
+                    <li class="p-1">Compensatory/ New problems Develop</li>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="risks py-3 ">Benefits of Treatment</div>
+                    <li class="p-1">Return to physical Activity</li>
+                    <li class="p-1">Rejoin family activities</li>
+                    <li class="p-1">Reduction in Pain </li>
+                    <li class="p-1">Quality of life improves</li>
+                </div>
+            </div>
+            <div class="row mt-3  px-lg-2 px-3 pe-lg-5 pe-3 individual">
+                For individuals with an ACL tear the chance of a meniscal tear increases by 2% with each of delay !.
+            </div>
+        </div>
+        <div class="col-lg-6 cloud p-5 mb-2">
+            <div class=" social-media text-center mt-5 ">
+                VISIT US ON
+            </div>
+            <div class=" social-media text-center">
+                SOCIAL MEDIA
+            </div>
+            <ul class="nav  nav-pills flex-column mt-2 align-items-center">
+                <li class="nav-item d-flex align-items-center sm-social">
+                    &nbsp;&nbsp;&nbsp;
+                    <iconify-icon icon="skill-icons:twitter" style="color: white;" width="20"
+                    height="20" class="bg-light rounded-5 p-2 social-twitter"></iconify-icon>                    <span class="media-name">&nbsp;&nbsp;Twitter : </span><span class="cloud-text">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@myorthoproblem</span>
+                </li>
+                <li class="nav-item d-flex align-items-center mt-2 sm-social">
+                    <iconify-icon icon="devicon:facebook" style="color: white;" width="20"
+                    height="20" class="bg-light rounded-5 p-2 social-facebook"></iconify-icon>                    <span class="media-name">&nbsp;&nbsp;Facebook : </span><span class="cloud-text">
+                        &nbsp;&nbsp;MyOrthoProblem</span>
+                </li>
+                <li class="nav-item d-flex align-items-center mt-2">
+                    <iconify-icon icon="skill-icons:instagram" style="color: white;" width="20"
+                    height="20" class="bg-light rounded-5 p-2 social-insta"></iconify-icon>
+                    <span class="media-name">&nbsp;&nbsp;Instagram : </span><span class="cloud-text">
+                        &nbsp;MyOrthoProblem</span>
+                </li>
+                <li class="nav-item d-flex align-items-center mt-2">
+                    &nbsp; &nbsp; &nbsp;<iconify-icon icon="logos:youtube-icon" style="color: white;" width="20"
+                    height="20" class="bg-light rounded-5 p-2 social-youtube"></iconify-icon>
+                    <span class="media-name">&nbsp;&nbsp;Youtube : </span><span class="cloud-text"> My Orthopedic Problem</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row d-md-none mb-4">
+        <div class=" social-media text-center mt-5 px-5">
+            VISIT US ON SOCIAL MEDIA
+        </div>
+        <ul class="nav  nav-pills flex-column mt-3 ms-2 px-3">
+            <li class="nav-item d-flex align-items-center sm-social">
+                <iconify-icon icon="skill-icons:twitter" style="color: white;" width="20"
+                height="20" class="bg-light rounded-5 p-2 social-twitter"></iconify-icon>                <span class="media-name">&nbsp;Twitter : </span><span class="cloud-text">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@myorthoproblem</span>
+            </li>
+            <li class="nav-item d-flex align-items-center mt-3 sm-social">
+                <iconify-icon icon="devicon:facebook" style="color: white;" width="20"
+                height="20" class="bg-light rounded-5 p-2 social-facebook"></iconify-icon>                <span class="media-name">&nbsp;Facebook : </span><span class="cloud-text">
+                    &nbsp;&nbsp;MyOrthoProblem</span>
+            </li>
+            <li class="nav-item d-flex align-items-center mt-3 sm-social">
+                <iconify-icon icon="skill-icons:instagram" style="color: white;" width="20"
+                            height="20" class="bg-light rounded-5 p-2 social-insta"></iconify-icon>                <span class="media-name">&nbsp;Instagram : </span><span class="cloud-text">
+                    &nbsp;MyOrthoProblem</span>
+            </li>
+            <li class="nav-item d-flex align-items-center mt-3 sm-social">
+                <iconify-icon icon="logos:youtube-icon" style="color: white;" width="20"
+                height="20" class="bg-light rounded-5 p-2 social-youtube"></iconify-icon>                <span class="media-name">&nbsp;Youtube : </span><span class="cloud-text"> &nbsp;&nbsp;&nbsp;&nbsp;My Orthopedic
+                    Problem</span>
+            </li>
+        </ul>
+    </div>
+    <!-- footer -->
+    <div class="row m-0 p-lg-3 px-lg-5 mop-footer text-white">
+        <div class="col-lg-4">
+            <img class="pe-4 footer-logo" src="/assert/Screenshot 2023-08-26 125509.png">
+            <div class="row mt-3 ms-3 me-5">
+                Injuries, joint replacements, and orthoppedic issues are difficult to navigate. We have designed
+                this site as a valuable resource for you to get the care you need when you need.
+            </div>
+            <div class="d-flex mt-4 ms-3">
+                <div class="">
+                    <img src="/assert/Screenshot 2023-08-26 130121.png">
+                </div>
+                <div class=" fs-lg-5 fs-7 fw-bold ms-3 mt-4">
+                    <a class="text-white" href="#">A Clinekt health Company</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 mt-5 px-lg-5 px-md-5 px-5 ">
+            <div class="row fw-bolder">
+                Quick Links
+            </div>
+            <div class="row mt-2">
+                Home
+            </div>
+            <div class="row mt-2">
+                Evaluation
+            </div>
+            <div class="row mt-2">
+                Education
+            </div>
+            <div class="row mt-2">
+                Providers
+            </div>
+        </div>
+        <div class="col-lg-2 mt-5 px-lg-5 px-md-5 px-5">
+            <div class="row fw-bolder">
+                Legal
+            </div>
+            <div class="row mt-2">
+                Terms & Conditions
+            </div>
+            <div class="row mt-2">
+                Cookie Policy
+            </div>
+            <div class="row mt-2">
+                Privacy Policy
+            </div>
+            <div class="row mt-2">
+                Advertising Policy
+            </div>
+            <div class="row mt-2">
+                Review Guidlines
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mt-5 px-lg-5 px-md-5 px-5">
+            <div class="row fw-bolder ms-lg-1">
+                Contact Us
+            </div>
+            <div class="row ms-lg-1">
+                <div class="d-flex support px-0 py-2 "><iconify-icon icon="tabler:mail-filled" class="p-0" style="color: white;" width="25" height="25"></iconify-icon>&nbsp;support@myorthopedicproblem.com</div>
+            </div>
+            <!-- <div class="d-flex mb-3 p-0 ">
+                <iconify-icon icon="tabler:mail-filled" style="color: white;" width="25" height="25"></iconify-icon>
+                <div class="p-1">support@myorthopedicproblem.com</div>
+            </div> -->
+            <div class="row fw-bolder ms-lg-1 mt-4">
+                Social Media
+            </div>
+            <div class="row mt-2">
+                <div class="d-flex flex-row justify-content-start mb-3 px-lg-3 p-0">
+                    <div class="p-1"><iconify-icon icon="skill-icons:twitter" style="color: white;" width="20"
+                            height="20" class="bg-light rounded-5 p-2"></iconify-icon></div>
+                    <div class="p-1"><iconify-icon icon="devicon:facebook" style="color: white;" width="20"
+                            height="20" class="bg-light rounded-5 p-2"></iconify-icon></div>
+                    <div class="p-1"><iconify-icon icon="logos:youtube-icon" style="color: white;" width="20"
+                            height="20" class="bg-light rounded-5 p-2"></iconify-icon></div>
+                    <div class="p-1"><iconify-icon icon="skill-icons:instagram" style="color: white;" width="20"
+                            height="20" class="bg-light rounded-5 p-2"></iconify-icon></div>
+                    <div class="p-1"><iconify-icon icon="skill-icons:linkedin" style="color: white;" width="20"
+                            height="20" class="bg-light rounded-5 p-2"></iconify-icon></div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0 footer-line ms-4 mt-4 p-0">
+    </div>
+    <div class="row m-0 text-white p-4 mop-footer ">
+        <p class="text-center">MyOrthopedicProblem.com <span><iconify-icon icon="ant-design:copyright-outlined"
+                    style="color: white;" width="16" height="16"></iconify-icon></span> Copyrights 2022 | Designed &
+            All rights reserved.</p>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
